@@ -16,7 +16,8 @@ def create_app():
         return response.html('<p>Backend</p>')
 
     # Modify to take a search filter and return only matching results
-    @app.route("/backend/stores", methods=["POST"])
+    @app.route("/backend/stores", methods=["GET"])
+
     async def stores(request):
         stores = [
             {"id": 1, "name": "Buffalo", "tags": "gen3, northeast"},
@@ -40,7 +41,7 @@ def create_app():
             {"id": 19, "name": "Scottsdale 320", "tags": "gen3, southwest"},
             {"id": 20, "name": "Scottsdale 142", "tags": "gen4, southwest, kitchen"}
         ]
-        
+
         return response.json({'stores': stores})
 
     return app

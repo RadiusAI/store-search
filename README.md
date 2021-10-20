@@ -1,3 +1,6 @@
+![Preview](https://github.com/vkalinkin/store-search/blob/styling/frontend/public/store%20search.gif)
+
+
 # Store Search
 Store Search is a component you will create that allows a user to search for stores by starting to type in the input field.  As the user types, the API is called to return matching stores.
 
